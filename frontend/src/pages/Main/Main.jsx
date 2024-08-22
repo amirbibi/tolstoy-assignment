@@ -13,7 +13,7 @@ const Main = () => {
     setError(null);
     try {
       const response = await fetch(
-        "https://tolstoy-assignment-api.vercel.app/fetch-metadata",
+        "https://tolstoy-assignment-ekmbqa9q9-amirs-projects-06b8a9b4.vercel.app/",
         {
           method: "POST",
           headers: {
