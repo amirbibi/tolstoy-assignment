@@ -7,7 +7,7 @@ import { fetchMetaDataFromUrls } from "./src/controllers/urlController.js";
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://tolstoy-assignment-sigma.vercel.app" }));
 app.use(express.json());
 
 const limiter = rateLimit({
@@ -18,6 +18,9 @@ const limiter = rateLimit({
 
 app.post("/fetch-metadata", limiter, fetchMetaDataFromUrls);
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
+
+export default app;
