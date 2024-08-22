@@ -33,6 +33,13 @@ const limiter = rateLimit({
   message: "Too many requests, please try again later.",
 });
 
+const handler = allowCors(async (req, res) => {
+  if (req.method === "POST") {
+    return fetchMetaDataFromUrls(req, res);
+  }
+  res.status(405).end();
+});
+
 app.post("/fetch-metadata", limiter, fetchMetaDataFromUrls);
 
 const PORT = process.env.PORT || 5000;
