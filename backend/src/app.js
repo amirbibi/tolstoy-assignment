@@ -6,7 +6,6 @@ import { fetchMetaDataFromUrls } from "./controllers/urlController.js";
 
 const app = express();
 
-app.use(helmet());
 app.use(
   cors({
     origin: [
@@ -17,6 +16,14 @@ app.use(
     allowedHeaders: ["Content-Type"],
   })
 );
+
+app.use(
+  helmet({
+    crossOriginResourcePolicy: { policy: "cross-origin" },
+    contentSecurityPolicy: false,
+  })
+);
+
 app.use(express.json());
 
 const limiter = rateLimit({
