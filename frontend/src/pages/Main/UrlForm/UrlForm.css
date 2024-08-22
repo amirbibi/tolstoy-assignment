@@ -1,0 +1,30 @@
+.submitButton {
+  margin-left: 8px;
+  background-color: blueviolet;
+  font-weight: bold;
+}
+
+.addUrlButton {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.inputGroup button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f44336;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.inputGroup button:hover {
+  background-color: #ff1100;
+}
