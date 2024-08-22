@@ -8,9 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://*-amirs-projects-06b8a9b4.vercel.app",
-    ],
+    origin: ["https://tolstoy-assignment-sigma.vercel.app/"],
   })
 );
 
