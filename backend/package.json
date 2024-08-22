@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "dev": "nodemon app.js",
-    "build-vercel": "echo hello"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
