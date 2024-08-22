@@ -1,14 +1,15 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "src/app.js",
   "type": "module",
   "jest": {
     "transform": {}
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "dev": "nodemon src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "",
