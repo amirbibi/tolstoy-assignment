@@ -12,13 +12,16 @@ const Main = () => {
     e.preventDefault();
     setError(null);
     try {
-      const response = await fetch("http://localhost:5000/fetch-metadata", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ urls }),
-      });
+      const response = await fetch(
+        "https://tolstoy-assignment-api.vercel.app/fetch-metadata",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ urls }),
+        }
+      );
 
       // Checks for HTTP error responses (404, 500 etc.)
       if (!response.ok) {
