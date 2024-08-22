@@ -2,7 +2,9 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
+console.log("Starting import");
 import { fetchMetaDataFromUrls } from "./controllers/urlController.js";
+console.log("Import successful");
 
 const app = express();
 
