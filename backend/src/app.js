@@ -7,7 +7,12 @@ import { fetchMetaDataFromUrls } from "./controllers/urlController.js";
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: "https://tolstoy-assignment-sigma.vercel.app" }));
+app.use(
+  cors({
+    origin:
+      "https://tolstoy-assignment-3zzb718oy-amirs-projects-06b8a9b4.vercel.app/",
+  })
+);
 app.use(express.json());
 
 const limiter = rateLimit({
