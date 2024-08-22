@@ -40,7 +40,7 @@ const handler = allowCors(async (req, res) => {
   res.status(405).end();
 });
 
-app.post("/fetch-metadata", limiter, fetchMetaDataFromUrls);
+app.post("/fetch-metadata", limiter, handler);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
