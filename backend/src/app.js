@@ -10,7 +10,7 @@ app.use(helmet());
 app.use(
   cors({
     origin:
-      "https://tolstoy-assignment-3zzb718oy-amirs-projects-06b8a9b4.vercel.app/",
+      "https://tolstoy-assignment-3j6lgsewm-amirs-projects-06b8a9b4.vercel.app",
   })
 );
 app.use(express.json());
