@@ -8,11 +8,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://tolstoy-assignment-3j6lgsewm-amirs-projects-06b8a9b4.vercel.app",
-      "https://tolstoy-assignment-ekmbqa9q9-amirs-projects-06b8a9b4.vercel.app",
-    ],
-    methods: ["POST"],
+    origin: ["https://*.amirs-projects-06b8a9b4.vercel.app"],
+    methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
 );
@@ -20,7 +17,6 @@ app.use(
 app.use(
   helmet({
     crossOriginResourcePolicy: { policy: "cross-origin" },
-    contentSecurityPolicy: false,
   })
 );
 
