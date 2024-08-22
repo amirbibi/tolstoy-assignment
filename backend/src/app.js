@@ -9,7 +9,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://tolstoy-assignment-3j6lgsewm-amirs-projects-06b8a9b4.vercel.app",
+      "https://*-amirs-projects-06b8a9b4.vercel.app",
     ],
   })
 );
